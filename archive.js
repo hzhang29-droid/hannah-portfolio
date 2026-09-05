@@ -32,7 +32,7 @@ document.querySelector('.collage .world-caption').innerHTML=bi('a little room fo
 document.querySelector('.wordmark').innerHTML='<span class="brand-oyster" aria-hidden="true">🦪</span><span class="sr-only">Hannah Zhang</span>';document.querySelector('.wordmark').setAttribute('aria-label','Hannah Zhang');
 document.querySelectorAll('.intro-note,.top-note,.bottom-note,.collage-star,.about-photo>.hand,.world-caption,.daily-notes').forEach(el=>el.remove());
 document.querySelector('.portrait figcaption').innerHTML=bi('Boston','波士顿');
-document.querySelector('.fish figcaption').innerHTML=bi('Zebrafish · 70 hpf','斑马鱼 · 70 hpf');
+document.querySelector('.fish figcaption')?.replaceChildren();
 document.querySelector('.location-copy h2').innerHTML=bi('Hannah / Zihan Zhang','Hannah / 张梓涵');
 document.querySelectorAll('.location-copy>p')[1].remove();
 document.querySelector('.location-intro>.eyebrow').innerHTML=bi('01 / Intro','01 / 介绍');
